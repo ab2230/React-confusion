@@ -44,9 +44,9 @@ import { Card, CardImg, CardTitle, CardImgOverlay, CardText, CardBody } from 're
         }
     }
     const DishDetailComponent=(props)=>{
-        if(props.dish==null && props.dish==undefined){
+        if(props.Dish==null && props.Dish==undefined){
             return(<div></div>);
-        }         
+        }      
         return(
             <div className="container">
              <div className="row">
