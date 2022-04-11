@@ -16,9 +16,8 @@ class Contact extends Component {
     }
 
     handleSubmit(values){
-        console.log("Current State is:"+JSON.stringify(values));
-        alert("Current State is:"+JSON.stringify(values));
         this.props.resetFeedbackForm();
+        this.props.postFeedback(values);
     }
     render(){
     return(
@@ -29,7 +28,7 @@ class Contact extends Component {
                  <BreadcrumbItem active>Contact Us</BreadcrumbItem>
                  </Breadcrumb>
                  <div className='col-12'>
-                    <h3>Contact Us</h3>
+                    <h3>Contact Us</h3>        console.log("Current State is:"+JSON.stringify(values));
                     <hr />
                  </div>
              </div>
